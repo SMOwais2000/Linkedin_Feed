@@ -1,9 +1,11 @@
+import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutterapp/constants.dart';
 
 import 'package:responsive_builder/responsive_builder.dart';
 
+import '../notificationservice/local_notification_service.dart';
 import '../widget/Custom_Buttons.dart';
 import '../widget/custom_appBar.dart';
 import 'data.dart';
@@ -22,9 +24,50 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   void initState() {
     super.initState();
-    _scrollController = ScrollController();
-    _initialScroll();
+    // 1. This method call when app in terminated state and you get a notification
+    // when you click on notification app open from terminated state and you can get notification data in this method
+
+    FirebaseMessaging.instance.getInitialMessage().then(
+      (message) {
+        print("FirebaseMessaging.instance.getInitialMessage");
+        if (message != null) {
+          print("New Notification");
+        }
+      },
+    );
+    // 2. This method only call when App in forground it mean app must be opened
+    FirebaseMessaging.onMessage.listen(
+      (message) {
+        print("FirebaseMessaging.onMessage.listen");
+        if (message.notification != null) {
+          //? in a place of ! in the below 2 line
+          print(message.notification?.title);
+          print(message.notification?.body);
+          print("message.data11 ${message.data}");
+          LocalNotificationService.createanddisplaynotification(message);
+        }
+      },
+    );
+    // 3. This method only call when App in background and not terminated(not closed)
+    FirebaseMessaging.onMessageOpenedApp.listen(
+      (message) {
+        print("FirebaseMessaging.onMessageOpenedApp.listen");
+        if (message.notification != null) {
+          //? in a place of ! in the below 2 line
+          print(message.notification?.title);
+          print(message.notification?.body);
+          print("message.data22 ${message.data['_id']}");
+        }
+      },
+    );
   }
+
+  // @override
+  // void initState() {
+  //   super.initState();
+  //   _scrollController = ScrollController();
+  //   _initialScroll();
+  // }
 
   void _initialScroll() async {
     _scrollController.addListener(() {

@@ -20,10 +20,6 @@
         "source": "com.benjt.com.flutterapp-main-11:/mipmap-xhdpi/ic_launcher.png"
     },
     {
-        "merged": "com.benjt.com.flutterapp-merged_res-18:/drawable_launch_background.xml.flat",
-        "source": "com.benjt.com.flutterapp-main-11:/drawable/launch_background.xml"
-    },
-    {
         "merged": "com.benjt.com.flutterapp-merged_res-18:/drawable-v21_launch_background.xml.flat",
         "source": "com.benjt.com.flutterapp-main-11:/drawable-v21/launch_background.xml"
     }

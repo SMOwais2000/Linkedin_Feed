@@ -281,10 +281,10 @@
       "name": "flutterapp",
       "rootUri": "../",
       "packageUri": "lib/",
-      "languageVersion": "2.7"
+      "languageVersion": "2.10"
     }
   ],
-  "generated": "2023-04-27T17:07:22.274444Z",
+  "generated": "2023-04-27T20:52:17.381212Z",
   "generator": "pub",
-  "generatorVersion": "2.19.4"
+  "generatorVersion": "2.19.6"
 }

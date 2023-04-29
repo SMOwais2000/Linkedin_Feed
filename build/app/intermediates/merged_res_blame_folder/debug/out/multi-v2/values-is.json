@@ -4,24 +4,7 @@
             "outputFile": "com.benjt.com.flutterapp-mergeDebugResources-16:/values-is/values-is.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\smsha\\.gradle\\caches\\transforms-3\\de5745b8ff0bf353349c8cb6be22a8c1\\transformed\\core-1.6.0\\res\\values-is\\values-is.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "20",
-                        "startColumns": "4",
-                        "startOffsets": "2203",
-                        "endColumns": "100",
-                        "endOffsets": "2299"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\smsha\\.gradle\\caches\\transforms-3\\fdefab82ebb8ffe407d4753f24fed02c\\transformed\\jetified-play-services-base-18.0.1\\res\\values-is\\values.xml",
+                    "source": "C:\\Users\\smsha\\.gradle\\caches\\transforms-3\\1d7f0a67388ad483cd9dc5ce1c967b5d\\transformed\\jetified-play-services-base-18.0.1\\res\\values-is\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -38,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\smsha\\.gradle\\caches\\transforms-3\\c15330a309444de4b136932678964709\\transformed\\jetified-play-services-basement-18.1.0\\res\\values-is\\values.xml",
+                    "source": "C:\\Users\\smsha\\.gradle\\caches\\transforms-3\\0baab4f5f82d5db5f045d2043cb433b8\\transformed\\jetified-play-services-basement-18.1.0\\res\\values-is\\values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -52,6 +35,23 @@
                         "startOffsets": "1029",
                         "endColumns": "128",
                         "endOffsets": "1153"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\smsha\\.gradle\\caches\\transforms-3\\dc9eff497874410744df77cc7eadc602\\transformed\\core-1.6.0\\res\\values-is\\values-is.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "20",
+                        "startColumns": "4",
+                        "startOffsets": "2203",
+                        "endColumns": "100",
+                        "endOffsets": "2299"
                     }
                 }
             ]
